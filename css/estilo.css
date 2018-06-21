@@ -1,0 +1,248 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html,body{
+    width:100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.links,header,section,div,article{
+    display: inline-block;
+}
+.clear{
+    clear: both;
+}
+header{
+    width:100%;
+    padding-top:5.7%;
+    padding-bottom:5.7%;
+}
+header h1, header h2{
+    display:none
+}
+a{
+    color: white;
+}
+.container{
+    min-width: 700px;
+    width: 73.4%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    padding-top: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgba(17, 2, 2, 0);
+}
+.links{
+    float:right;
+}
+.links ul{
+    list-style-type:none;
+}
+.links ul li{
+    display:inline-block;
+}
+.links ul li a img{
+    margin-left:20px;
+}
+main{
+    width: 100%;
+    height: 100%;;
+}
+.big{
+    width:100%;  
+    background-color: #3db39e;
+    overflow:  hidden;
+    color: white;
+}
+.text-big{
+    margin-top: 10%;
+    width: 100%;
+    padding-bottom: 19%;
+    background-image: url("../img/phone.png");
+    background-position-x: 100%;
+    background-position-y: -101%;
+    background-repeat: no-repeat;
+}
+.text-big h2{
+    display: block;
+    margin-top: 5%;
+    font-weight: 400;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 55px;
+    width: 50%;
+     font-size: 55px;
+    width: 50%; 
+}
+.text-big p{
+    margin-top: 3%;
+    width: 47%; 
+    font-size: 12pt;
+}
+.button{
+    text-transform: uppercase;
+    margin: 1% auto 0px auto;
+    font-size: 15pt;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+    padding: 4%;
+    border-radius: 8px;
+    display: inline-block;
+}
+.buy{
+    color:#26a6d1;
+    background: white;
+    text-decoration: none;
+}
+.more{
+    color: white;
+    background: transparent;
+}
+.features{
+    padding-top: 7%;
+    text-align: center;
+    height: 80%;
+    box-sizing: border-box;
+}
+.features h2{
+    color: #324d5b;
+    font-weight: 100;
+    margin-bottom: 4%;
+}
+.features p{
+    color: #8e8e8e;
+    line-height: 1.7em;
+}
+.section-feature{
+    width: 30%;
+    margin-top: 8%;
+    text-transform: uppercase;
+
+}
+.section-feature h2{
+    font-size: 13pt;
+    font-weight: 600;
+    margin-top: 8%;
+    line-height: 1.5em;
+    display: block;
+}
+.section-feature p{
+    font-size: 0.8em;
+    width: 98%;
+}
+span{
+    display: inline-block;
+    background:#ccd0d2;
+    width: 22px;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.slides{
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-top: 10%;
+}
+.span-slides{
+    margin-left: 10%;
+    float: right;
+    position: absolute;
+}
+.seletor-slides{
+    display: inline-block;
+    background:#3db39e;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.slides img{
+    float: left;
+    margin-bottom:-20px;
+}
+.slide{
+    float: left;
+    width: 39%;
+    margin-left: 14%;
+    margin-top: 6%;
+}
+.slide h2{
+    color: #324d5b;
+    font-weight: 300;
+    font-size: 30pt;
+    margin-bottom: 2%;
+}
+.slide p{
+    color: #c3c3c3;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.text{
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    height: 50%;
+}
+.text h2{
+    margin-bottom: 4%;
+    color:#324d5b;
+    font-weight: 200;
+    font-size: 25pt;
+}
+.text p{
+    display: inline-block;
+    color: #959595;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.subscribe{
+    width: 100%;
+    background: #26a6d1;
+    color: white;
+    text-align: center
+}
+.subscribe h1{
+    font-weight: 100;
+    margin-top: 14%;
+    margin-bottom: 5%;
+}
+.subscribe input{
+    background-color: white;
+    border:none;
+    border-radius: 4px;
+    height: 50px;
+}
+.subscribe  input[type="email"]{
+    width: 50%;
+    float: left;
+    margin-left:15%;
+}
+.subscribe  input[type="submit"]{
+    float: left;
+    margin-left: 10px;
+    width: 20%;
+    font-size: 20pt;
+    font-weight: 600;
+}
+.subscribe p{
+    display: inline-block;
+    margin-top: 4%;
+    margin-bottom: 10%;
+    font-weight: 100;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    width: 72%;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    background: red;
+
+}
