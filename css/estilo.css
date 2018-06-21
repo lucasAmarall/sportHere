@@ -26,9 +26,10 @@ a{
     color: white;
 }
 .container{
-    min-width: 700px;
+    max-width: 2000px;
     width: 73.4%;
     height: 100%;
+    
     margin: auto;
     display: block;
     padding-top: 3px;
@@ -53,7 +54,10 @@ main{
     height: 100%;;
 }
 .big{
-    width:100%;  
+    height: 57%;
+    min-height: 700px;
+    width:100%;
+    min-width: 100%;
     background-color: #3db39e;
     overflow:  hidden;
     color: white;
@@ -61,10 +65,11 @@ main{
 .text-big{
     margin-top: 10%;
     width: 100%;
-    padding-bottom: 19%;
+    height: 100%;
+    /* padding-bottom: 19%; */
     background-image: url("../img/phone.png");
-    background-position-x: 100%;
-    background-position-y: -101%;
+    background-position-x: right;
+    background-position-y: bottom;
     background-repeat: no-repeat;
 }
 .text-big h2{
@@ -77,6 +82,9 @@ main{
     width: 50%;
      font-size: 55px;
     width: 50%; 
+}
+#h2Mobi{
+    display: none
 }
 .text-big p{
     margin-top: 3%;
@@ -208,7 +216,7 @@ span{
     color: white;
     text-align: center
 }
-.subscribe h1{
+.subscribe h2{
     font-weight: 100;
     margin-top: 14%;
     margin-bottom: 5%;
@@ -241,8 +249,114 @@ span{
     width: 72%;
 }
 footer{
+    display: none;
     width: 100%;
+    position: fixed;
     position: absolute;
     background: red;
 
 }
+@media (max-width: 768px){
+    .links,header,section,div,article{
+        display:block;
+    }
+    .container{
+        min-width: 100%;
+        width: 100%;
+    }
+   .logo{
+       height: 100px;
+       padding: 10%;
+   }
+   .logo img{
+       margin: auto 
+   }
+    .links{
+        display: none;
+    }
+    .big{
+        height: 150%;
+    }
+    .text-big{
+        min-width: 100%;
+        text-align: center;
+        background-position: bottom;
+
+    }
+    .text-big h2{
+        display: none;
+        margin: auto;
+    }
+    #h2Mobi{
+        display: inline-block;
+        font-size: 30pt;
+        min-width: 100%;
+        margin: auto;
+    }
+    .text-big p{
+        margin-top: 34px;
+        display: inline-block;
+        min-width: 50%;
+        width: 80%;
+        margin-top: 40px;
+        line-height: 2em;
+    }
+    .features{
+        height: 250%;
+         overflow: visible;
+
+    }
+    .features h2{
+        display: inline-block;
+        padding-top: 15%;
+        padding-bottom: 7%;
+        font-size: 25pt;
+        max-width: 90%;
+        margin: auto;
+    }
+    .features p{
+        width: 80%;
+        margin: auto;
+    }
+    .section-feature{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .section-feature img{
+        display: block;
+        margin: auto;
+    }
+    .section-feature h2{
+        font-size: 16pt;
+    }
+    .section-feature span{
+        margin: auto;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .span-slides{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .seletor-slides{
+        margin: auto;
+    }
+    .slide{
+        float: left;
+        width: 100%;
+        margin-top: 6%;
+        margin-left:0; 
+        text-align: center;
+    }
+    .slide h2{
+        font-size: 2em;
+        width: 90%;
+        margin: auto;
+    }
+    .slide img{
+        width: 90%;
+    }
+  }
