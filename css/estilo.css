@@ -4,7 +4,6 @@
 }
 html,body{
     width:100%;
-    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
 .links,header,section,div,article{
@@ -13,24 +12,27 @@ html,body{
 .clear{
     clear: both;
 }
+.green a{
+    color: green;
+}
+.blue a{
+    color: #26a6d1;
+}
 header{
     width:100%;
     padding-top:5.7%;
     padding-bottom:5.7%;
 }
 header h1, header h2{
-    display:none 
-}
-a{
-    color: white;
+    font-size: 1px;
+    text-indent: -99999999em;
 }
 .container{
     max-width: 2000px;
+    min-width: 977px;
     width: 73.4%;
-    height: 100%;
     margin: auto;
     display: block;
-    padding-top: 3px;
     box-sizing: border-box;
     overflow: hidden;
     background-color: rgba(17, 2, 2, 0);
@@ -49,11 +51,9 @@ a{
 }
 main{
     width: 100%;
-    height: 100%;
-   ;
 }
 .big{
-    height: 57%;
+    height: 684px;
     min-height: 700px;
     width:100%;
     min-width: 100%;
@@ -61,20 +61,26 @@ main{
     overflow: hidden;
     color: white;
 }
+.big img{
+    float: right;
+    margin-top: 150px;
+}
 .text-big{
-    margin-top: 10%;
+    overflow: hidden;
     width: 100%;
     height: 100%;
-   /* padding-bottom: 19%;
-    */
-    background-image: url("../img/phone.png");
-    background-position-x: right;
-    background-position-y: bottom;
     background-repeat: no-repeat;
+    display: table-cell;
+    width: 100%;
+    height: 700px;
+    vertical-align: middle;
+}
+.text-big img{
+    position: absolute;
+    margin-left: 50%;
 }
 .text-big h2{
     display: block;
-    margin-top: 5%;
     font-weight: 400;
     width: 100%;
     text-transform: uppercase;
@@ -106,6 +112,7 @@ main{
     color:#26a6d1;
     background: white;
     text-decoration: none;
+    transition: 1s cubic-bezier(0, 0, 0, 1.95);
 }
 .more{
     color: white;
@@ -128,6 +135,7 @@ main{
 }
 .section-feature{
     width: 30%;
+    height: 327px;
     margin-top: 8%;
     text-transform: uppercase;
 }
@@ -142,7 +150,7 @@ main{
     font-size: 0.8em;
     width: 98%;
 }
-span{
+.section-feature span{
     display: inline-block;
     background:#ccd0d2;
     width: 22px;
@@ -157,12 +165,12 @@ span{
     padding-top: 10%;
 }
 .span-slides{
+    font-size: 1px;
+    text-align: -99999999em;
     margin-left: 41.8%;
     margin-top: 2%;
     float: left;
     position: absolute;
-   /* background: red;
-    */
     display: inline;
 }
 .seletor-slides{
@@ -177,12 +185,6 @@ span{
 }
 .slide{
     float: left;
-   /* background: yellow;
-    */
-   /* margin-left: 14%;
-    */
-   /* margin-top: 6%;
-    */
 }
 .slide img{
     float: left;
@@ -196,8 +198,6 @@ span{
     font-size: 27pt;
     margin-bottom: 2%;
     margin-right: 0%;
-   /* background: red;
-    */
     margin-top: 10%;
 }
 .slide p{
@@ -243,6 +243,7 @@ span{
     height: 50px;
 }
 .subscribe input[type="email"]{
+    text-indent: 15pt;
     width: 50%;
     float: left;
     margin-left:15%;
@@ -250,6 +251,8 @@ span{
 .subscribe input[type="submit"]{
     float: left;
     margin-left: 10px;
+    min-width: 150px;
+    text-align: center;
     width: 20%;
     font-size: 20pt;
     font-weight: 600;
@@ -264,9 +267,12 @@ span{
     width: 72%;
 }
 footer{
-    
-    width: 100%;
-    background: red;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-footer img, .logo-footer span{
+    display: inline-block;
+    vertical-align: middle;
 }
 @media (max-width: 768px){
     .links,header,section,div,article{
