@@ -1,0 +1,352 @@
+body{
+    font:17px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 940px;
+    position: relative;
+}
+header h1, header h2{
+    font-size:1px;
+    text-indent: -9999em;
+}
+
+.redes-socias {
+    float: right;
+    display:  inline-block;
+}
+
+.logo {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-top: -15px;
+    margin-left: 15px;
+    display:  inline-block;
+}
+.big-text h2 {   
+     font-size: 55px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+header {
+    padding: 69px 0px 69px;
+}
+header img{
+    width: 100%;
+    float: left;
+}
+.big-text {
+    width: 460px;
+    height: 634px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+section.section-big {
+    background: #3db39e;
+    color: #ffffff;
+}
+.big-phone {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.button{
+    text-transform: uppercase;
+    margin: 1% auto 0px auto;
+    font-size: 15pt;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+    padding: 4%;
+    border-radius: 8px;
+    display: inline-block;
+}
+.button-big{
+    color:#26a6d1;
+    background: white;
+    text-decoration: none;
+    transition: 1s cubic-bezier(0, 0, 0, 1.95);
+}
+.link-big{
+    color: white;
+    background: transparent;
+}
+.text{
+    text-align: center;
+    padding: 84px 0 95px;
+}
+.text h2,.text h3{
+    color: #324d5b;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.text p{
+    color: #6a6a6a;
+    margin: 35px 60px 0px;
+}
+.section-feature img{
+    display:block;
+    margin: auto;
+}
+.section-feature{
+    width: 32%;
+    text-align: center;
+    height: 327px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.section-feature:hover >span{
+    background-color: #3db39e;
+}
+.section-feature h2{
+    font-size: 13pt;
+    font-weight: 600;   
+    line-height: 1.5em;
+    display: block;
+}
+.section-feature p{
+    font-size: 11px;
+    line-height: 21px;
+    width: 100%;
+    color: #6a6a6a;
+}
+.section-feature span{
+    display: block;
+    background:#ccd0d2;
+    width: 22px;
+    height: 3px;
+    border-radius: 10px;
+    margin: 5% auto;
+}
+.nav-slides {
+    display: inline-block;
+    width:  30px;
+    height: 30px;
+    margin: 64px 53% 0px;
+}
+.slides{
+    background-color: #f6f6f6;
+}
+.slides img{
+    float: left;
+    position: absolute;
+}
+.text.text-slide.container  {
+    text-align: left;
+}
+.text-slide {
+    width: 400px;
+    float:  right;
+}
+/*subscribe*/
+
+.subscribe{
+    width: 100%;
+    background: #26a6d1;
+    color: white;
+    text-align: center ;
+    padding:107px 0 113px;
+}
+.subscribe h2{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 0 0 36px;
+}
+.subscribe input{
+    background-color: white;
+    border:none;
+    border-radius: 4px;
+    height: 50px;
+}
+.subscribe input[type="email"]{
+    text-indent: 15pt;
+    width: 50%;
+    float: left;
+    margin-left:15%;
+}
+.subscribe input[type="submit"]{
+    float: left;
+    margin-left: 10px;
+    min-width: 150px;
+    text-align: center;
+    width: 20%;
+    font-size: 20pt;
+    font-weight: 600;
+    color: #26a6d1;
+    margin-bottom: 31pt;
+}
+.subscribe p{
+    display: inline-block;
+    font-weight: 100;
+    font-size: 12pt;
+    line-height: 1.5em;
+    width: 100%;
+    margin: 0;
+}
+footer{
+    padding: 69px 0px;
+}
+footer p{
+    color: #6a6a6a;
+    margin-left: 63px;
+}
+footer a{
+    font-size: 14px;
+    color: #3db39e;
+    font-weight: 600;
+}
+footer img, footer p,.logo-footer,.apple-store{
+    display: inline-block;
+}
+.apple-store img,.logo-footer img{
+    float: left;
+}
+.apple-store{
+    margin: 0px 0px 0px 121px;
+}
+.apple-store a{
+    margin-left: 27px;
+    color: #26a6d1;
+    font-weight: 400;
+}
+@media(max-width: 958px){
+    .redes-socias{
+        float: none;
+    }
+    .big-text{
+        width: 40%;
+        text-align: center;
+        vertical-align: top;
+        padding-top: 40px;
+        height: auto;
+    }
+    .big-text h2{
+        display: block;
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .big-phone{
+        margin: 0px auto;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        display: block;
+    }
+    .icon-logo-footer img{
+        display: none;
+    }
+    .icon-logo-footer p,footer .redes-socias{
+        display: block;
+    }
+    .apple-store {
+        text-align: center;
+        display: block;
+        position: absolute;
+        width: 100%;
+        padding: 80px 0px 80px;
+        margin: 0;
+    }
+    .apple-store img{
+        float: left;
+        margin: auto;
+        position: absolute;
+    }
+    .apple-store a {
+        padding-left: 37px;
+    }
+    footer .container{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .logo-footer{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .text-slide{
+        width: 90%;
+        float: none;
+        text-align: center;
+    } 
+    .text.text-slide.container  {
+        text-align: center;
+    }
+    .slides img {
+        width: 60%;
+        height: 600px;
+        float: none;
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 27px;
+
+    }
+    .nav-slides{
+        margin: 20pt auto;
+        display: block;
+    }
+}
+@media(max-width: 768px){
+    .logo{
+        width: 100%;
+    }
+    header img{
+        float: none;
+        margin: auto;
+        display: block;
+    }
+    header .redes-socias{
+        display: none;
+    }
+    .section-feature{
+        display: block;
+        margin: auto;
+        width: 95%;
+    }
+    .slides img {
+        height: 300px;
+    }
+}
+@media(max-width: 428px){
+    .container
+    {
+        margin: auto;
+    }
+    .button{
+        display: block;
+        width: 40%;
+        min-width: 144px;
+    }
+    header .logo img{
+        width: 80%;
+    }
+    .big-phone{
+        width: 80%;
+    }
+    .text p{
+        min-width: 100%;
+        color: #6a6a6a;
+        margin: 0; 
+    }
+    .subscribe input[type="email"],.subscribe input[type="submit"],.subscribe p{
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        float: none;
+    }
+}
