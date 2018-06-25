@@ -222,6 +222,9 @@ footer img, footer p,.logo-footer,.apple-store{
     color: #26a6d1;
     font-weight: 400;
 }
+.icon-logo-footer{
+    display: inline;
+}
 @media(max-width: 958px){
     .redes-socias{
         float: none;
@@ -303,12 +306,19 @@ footer img, footer p,.logo-footer,.apple-store{
 }
 @media(max-width: 768px){
     .logo{
+        max-width: 100%;
         width: 100%;
+        text-align: center;
+        min-width: 10%;
+        /* background:  red; */
+        margin:  0px auto;
     }
     header img{
         float: none;
         margin: auto;
         display: block;
+        max-width: 450px;
+        max-height: 97px;
     }
     header .redes-socias{
         display: none;
