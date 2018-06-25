@@ -58,7 +58,7 @@ section.section-big {
 }
 .big-phone {
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     right: 0;
 }
 .button{
@@ -330,6 +330,9 @@ footer img, footer p,.logo-footer,.apple-store{
     }
     .slides img {
         height: 300px;
+    }
+    .big-phone{
+        bottom: -40px;
     }
 }
 @media(max-width: 428px){
