@@ -7,11 +7,11 @@ body{
     max-width: 940px;
     position: relative;
     box-sizing: border-box;
-    padding: 0px 20px;
 }
 header h1, header h2{
     font-size:1px;
-    text-indent: -9999em;
+    position: absolute;
+    text-indent: -99999em;
 }
 
 .redes-socias {
@@ -39,7 +39,7 @@ li {
 }
 
 header {
-    padding: 69px 0px 69px;
+    padding: 69px 0px;
 }
 header img{
     width: 100%;
@@ -65,17 +65,19 @@ section.section-big {
 }
 .button{
     text-transform: uppercase;
-    margin: 1% auto 0px auto;
-    font-size: 15pt;
+    margin:  auto;
+    height: 52px;
+    font-size: 20px;
     font-weight: 700;
     background-color: white;
     color: black;
-    padding: 4%;
     border-radius: 8px;
     display: inline-block;
+    line-height: 52px;
 }
 .button-big{
     color:#26a6d1;
+    padding: 0 30px;
     background: white;
     text-decoration: none;
     transition: 1s cubic-bezier(0, 0, 0, 1.95);
@@ -134,16 +136,16 @@ section.section-big {
 }
 .nav-slides {
     display: inline-block;
-    width:  30px;
     height: 30px;
-    margin: 64px 53% 0px;
+    margin: 137px 0 0;
 }
 .slides{
     background-color: #f6f6f6;
 }
 .slides img{
     float: left;
-    position: absolute;
+    position: relative;
+    bottom: -100px;
 }
 .text.text-slide.container  {
     text-align: left;
@@ -170,7 +172,7 @@ section.section-big {
 .subscribe input{
     background-color: white;
     border:none;
-    border-radius: 4px;
+    border-radius: 5px;
     height: 50px;
 }
 .subscribe input[type="email"]{
@@ -215,6 +217,8 @@ footer img, footer p,.logo-footer,.apple-store{
 }
 .apple-store img,.logo-footer img{
     float: left;
+    position: absolute;
+    left: 0;
 }
 .apple-store{
     margin: 0px 0px 0px 121px;
@@ -224,31 +228,39 @@ footer img, footer p,.logo-footer,.apple-store{
     color: #26a6d1;
     font-weight: 400;
 }
+.apple-store img{
+    position: relative;
+    display: inline-block;
+    float: left;
+    top: -6px;
+}
 .icon-logo-footer{
     display: inline;
 }
-@media(max-width: 958px){
+@media(max-width: 940px){
     .redes-socias{
         float: none;
+        margin-left: 20%;
     }
     .big-text{
         width: 40%;
-        text-align: center;
         vertical-align: top;
         padding-top: 40px;
         height: auto;
+        text-align: center;
     }
     .big-text h2{
         display: block;
         width: 100%;
         font-size: 40px;
         line-height: 50px;
+        text-align: center;
     }
     .big-phone{
         margin: 0px auto;
         position: relative;
         right: auto;
-        bottom: auto;
+        bottom:-58px;
         display: block;
     }
     .icon-logo-footer img{
@@ -260,10 +272,10 @@ footer img, footer p,.logo-footer,.apple-store{
     .apple-store {
         text-align: center;
         display: block;
-        position: absolute;
         width: 100%;
         padding: 80px 0px 80px;
         margin: 0;
+        background: white;
     }
     .apple-store img{
         float: left;
@@ -273,14 +285,27 @@ footer img, footer p,.logo-footer,.apple-store{
     .apple-store a {
         padding-left: 37px;
     }
+    footer{
+        padding: 0;
+        padding-bottom: 90px;
+        background: #f6f6f6;
+    }
     footer .container{
         display: block;
         margin: auto;
         text-align: center;
+        padding: 0;
+        background: #f6f6f6;
     }
     .logo-footer{
         text-align: center;
         width: 100%;
+        font-size: 14px;
+        padding: 80px 0 25px;
+    }
+    footer .redes-socias{
+        display: inline-block;
+        margin: auto;
     }
     
     .text-slide{
@@ -301,18 +326,29 @@ footer img, footer p,.logo-footer,.apple-store{
         top: 27px;
 
     }
-    .nav-slides{
-        margin: 20pt auto;
-        display: block;
+    .slides h3{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0 0 22px;
+        color: #324d5b;
+        font-weight: 200;
     }
-    /*.container{
-        width: 750px;
-        margin: auto;
-    }*/
+    .nav-slides{
+        margin: 30px auto ;
+        background: red;
+        text-align: center;
+        
+    }
+    .container{
+        padding: 30px;
+    }
+    .subscribe > .container{
+        padding: 0px;
+    }
+    
 }
 @media(max-width: 768px){
     .logo{
-            /* background: red; */
     margin: 0px auto;
     display: block;
     max-width: 252px;
@@ -323,6 +359,8 @@ footer img, footer p,.logo-footer,.apple-store{
         display: block;
         max-width: 450px;
         max-height: 97px;
+        width: 254px;
+        height: 52px;
     }
     header .redes-socias{
         display: none;
@@ -338,8 +376,14 @@ footer img, footer p,.logo-footer,.apple-store{
     .big-phone{
         bottom: -40px;
     }
+    .subscribe input{
+        width: 100%;
+    }
+    .big-phone{
+        bottom: -58px;
+    }
 }
-@media(max-width: 428px){
+@media(max-width: 480px){
     .container
     {
         margin: auto;
@@ -348,9 +392,6 @@ footer img, footer p,.logo-footer,.apple-store{
         display: block;
         width: 40%;
         min-width: 144px;
-    }
-    header .logo img{
-        width: 80%;
     }
     .big-phone{
         width: 80%;
@@ -362,9 +403,16 @@ footer img, footer p,.logo-footer,.apple-store{
     }
     .subscribe input[type="email"],.subscribe input[type="submit"],.subscribe p{
         display: block;
-        width: 80%;
+        width: 100%;
         margin: 10px auto;
         float: none;
+        text-align: center;    
+    }
+    .subscribe p{
+        margin-top: 40px;
+    }
+    .subscribe p + p {
+        margin-top: 0px;
     }
 }
 /*/////////animacoes*/

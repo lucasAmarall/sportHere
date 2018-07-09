@@ -17,6 +17,7 @@
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
+  min-height: 565px;
 }
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
