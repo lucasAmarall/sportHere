@@ -347,11 +347,6 @@ footer img, footer p,.logo-footer,.apple-store{
     
 }
 @media(max-width: 768px){
-    .logo{
-        margin: 0px auto;
-        display: block;
-        max-width: 252px;
-    }
     header img{
         float: none;
         margin: auto;
@@ -364,6 +359,11 @@ footer img, footer p,.logo-footer,.apple-store{
     header .redes-socias{
         display: none;
     }
+    .logo{
+        margin: 0px auto;
+        display: block;
+        max-width: 252px;
+    }
     .section-feature{
         display: block;
         margin: auto;
@@ -373,14 +373,12 @@ footer img, footer p,.logo-footer,.apple-store{
         height: 80%;;
     }
     .big-phone{
-        bottom: -40px;
+        bottom: -58px;
     }
     .subscribe input{
         width: 100%;
     }
-    .big-phone{
-        bottom: -58px;
-    }
+    
 }
 @media(max-width: 541px){
     .container
