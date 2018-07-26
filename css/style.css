@@ -24,6 +24,7 @@ header h1, header h2{
 }
 
 ul {
+    padding: 0;
     list-style-type: none;
 }
 
@@ -71,7 +72,7 @@ section.section-big {
     font-weight: 700;
     background-color: white;
     color: black;
-    border-radius: 5px;
+    border-radius: 8px;
     display: inline-block;
     line-height: 52px;
     animation: 4s cubic-bezier(1, 0.79, 0, 0.99);
@@ -79,7 +80,6 @@ section.section-big {
 .button-big{
     color:#26a6d1;
     padding: 0 30px;
-    margin: 0px 21px 0px 0px;
     background: white;
     text-decoration: none;
 }
@@ -195,6 +195,9 @@ section.section-big {
     color: #26a6d1;
     margin-bottom: 31pt;
 }
+.subscribe input[value="Ok"]{
+    display: none;
+}
 .subscribe p{
     display: inline-block;
     font-weight: 100;
@@ -208,7 +211,6 @@ footer{
 }
 footer p{
     color: #6a6a6a;
-    margin-left: 63px;
 }
 footer a{
     font-size: 14px;
@@ -388,8 +390,8 @@ footer img, footer p,.logo-footer,.apple-store{
     {
         margin: auto;
     }
-    .big-text{
-        text-align: ju
+    .button{
+        display: inline-block;
     }
     .big-phone{
         width: 80%;
@@ -401,11 +403,24 @@ footer img, footer p,.logo-footer,.apple-store{
         margin: 0; 
     }
     .subscribe input[type="email"],.subscribe input[type="submit"],.subscribe p{
-        display: block;
-        width: 100%;
+        display: inline-block;
         margin: 10px auto;
         float: none;
         text-align: center;    
+    }
+    .subscribe input[type="email"]{
+        width: 77%;
+        float:  left;
+        min-width: 190px;
+    }
+    .subscribe input[value="Subscribe"]{
+        display: none;
+    }
+    .subscribe input[value="Ok"]{
+        display: inline-block;
+        height: 52px;
+        min-width: 21%;
+        float: right;
     }
     .subscribe p{
         margin-top: 40px;
