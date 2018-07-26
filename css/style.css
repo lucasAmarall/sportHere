@@ -195,7 +195,7 @@ section.section-big {
     color: #26a6d1;
     margin-bottom: 31pt;
 }
-.subscribe input[value="Ok"]{
+.subscribe input[value="Ok"],.none{
     display: none;
 }
 .subscribe p{
@@ -393,6 +393,12 @@ footer img, footer p,.logo-footer,.apple-store{
     .button{
         display: inline-block;
     }
+    .display{
+        display: none;
+    }
+    .none{
+        display: inline-block;
+    }
     .big-phone{
         width: 80%;
         bottom: -60px;
@@ -411,7 +417,6 @@ footer img, footer p,.logo-footer,.apple-store{
     .subscribe input[type="email"]{
         width: 77%;
         float:  left;
-        min-width: 190px;
     }
     .subscribe input[value="Subscribe"]{
         display: none;
