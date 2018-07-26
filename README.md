@@ -1,6 +1,6 @@
 #SportHere
 
-#Projeto já finalizado 
+Projeto já finalizado 
 
 Para minifica execute os seguintes comandos 
 

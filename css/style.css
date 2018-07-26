@@ -71,7 +71,7 @@ section.section-big {
     font-weight: 700;
     background-color: white;
     color: black;
-    border-radius: 8px;
+    border-radius: 5px;
     display: inline-block;
     line-height: 52px;
     animation: 4s cubic-bezier(1, 0.79, 0, 0.99);
@@ -79,6 +79,7 @@ section.section-big {
 .button-big{
     color:#26a6d1;
     padding: 0 30px;
+    margin: 0px 21px 0px 0px;
     background: white;
     text-decoration: none;
 }
@@ -387,10 +388,8 @@ footer img, footer p,.logo-footer,.apple-store{
     {
         margin: auto;
     }
-    .button{
-        display: block;
-        width: 40%;
-        min-width: 144px;
+    .big-text{
+        text-align: ju
     }
     .big-phone{
         width: 80%;
